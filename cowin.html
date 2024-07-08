@@ -1,0 +1,1896 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>+cowin</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+
+
+  .header-main {
+    background-color: #045d5d;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+    padding: 5px 0;
+    font-family: Roboto, sans-serif !important;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 30px;
+  }
+
+  .row header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .mid-row{
+    padding-top:30px;
+    padding-bottom: 30px;
+    position: fixed; 
+    top: 50px; 
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .first-col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .government-india{
+    float: left;
+    font-weight: 400;
+    position: relative;
+    top: 0;
+    min-width: 200px;
+    color: #fff;
+  }
+
+  .logo {
+    float: left;
+    height: auto;
+    width: 20px;
+    margin-top: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .main-title {
+    display: block;
+    min-width: 200px;
+    font-size: 12px;
+  }
+
+  .main-title a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .header-right {
+    text-align: right !important;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto !important;
+    margin-bottom: 10px !important;
+    margin-top: auto !important;
+  }
+  
+  @media (min-width: 576px) {
+    .col-sm-6 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+  }
+  
+  .head-ul {
+    display: inline-block;
+    margin-top: 13px;
+    padding-right: 30px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: right !important;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .head-li {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+  }
+ 
+  .button-head {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    text-decoration: none;
+    width: 40px;
+    height: 29px;
+    text-align: center;
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    line-height: 22px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: none;
+    overflow: visible;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    padding: 1px 6px;
+  }
+  
+  .button-head:hover {
+    border: 1.5px solid #fff !important;
+  }
+
+  .btn-a {
+    border: 1.5px solid #fff !important;
+  }
+
+  .last-child {
+    margin-right: -10px;
+  }
+
+  .head-drop {
+    display: inline-block;
+    text-align: right;
+    box-shadow: border-box;
+  }
+  
+  .mid-row {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #017e7e !important;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+
+  .mid-contain {
+    padding: 0 30px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mid-left {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .mid-sub {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logoArea {
+    line-height: 0;
+    position: relative;
+    top: 0;
+  }
+
+  .logoArea a {
+    text-decoration: none;
+    background-color: transparent;
+  }
+
+  .cowin-logo {
+    display: block;
+  }
+
+  .cowin-image {
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .login-button {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .login-button {
+      right: 1;
+      margin-right: 55px;
+      font-size: 12px !important;
+      padding: 9px 25px !important;
+    }
+  }
+
+  .login-button a {
+    border: 2px solid #fff;
+    color: #fff !important;
+    padding: 9px 25px !important;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    text-align: center;
+    font-size: 13px !important;
+    text-transform: uppercase;
+  }
+  
+  .menuNav {
+    width: 100%;
+    padding: 0;
+    display: flex;
+  }
+  @media (max-width: 768px) {
+    .menuNav {
+      display: none;
+    }
+  }
+
+  .menuItem {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .navleft {
+    margin-right: 200px;
+  }
+
+  .menuItem li {
+    font-weight: 400;
+    display: inline-block;
+    align-items: center;
+    margin: 0px 10px 0px 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .menuItem a {
+    background: none;
+    border: none;
+    color: #fff !important;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    padding: 0 20px;
+    text-decoration: none;
+  }
+
+  .login-button a:hover {
+    color: #fcbf02 !important;
+    border-color: #fcbf02 !important ;
+  }
+
+  .menuItem a:hover {
+    color: #fcbf02 !important;
+  }
+  
+  .support {
+    position: fixed;
+    display: flex;
+    justify-content:flex-end;
+    top: 227px;
+    z-index: 99;
+  }
+
+  .support-btn {
+    background-image: linear-gradient(90deg, #017e7e 80%, #0c6161);
+    color: #fff;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    min-width: 130px;
+    height: 55px;
+    box-shadow: 0 10px 10px -10px #333;
+    border-top-left-radius: 38px;
+    border-bottom-left-radius: 38px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .support-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+    top: -3px;
+  }
+
+  .support-span {
+    position: relative;
+    left: 4px;
+  }
+
+  .support-img {
+    display: inline-flex;
+    margin-right: 23px;
+    height: 21px;
+    max-width: 100%;
+  }
+
+  .support-title {
+    font-size: 12px;
+    font-weight: 500;
+   }
+
+  .support-covid {
+    display: block;
+    white-space: nowrap;
+  }
+  @media (max-width: 768px) {
+    .support-title{
+      display: none;
+     }
+  }
+  @media (max-width: 768px) {
+   .support-btn{
+    min-width: 0px;
+   }
+  }
+  
+  .banner1 {
+    background-image: url(https://www.cowin.gov.in/precaution_banner_bg_web.c656a76b28237d8fb924.png);
+    background-size: 100% 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding-top:150px;
+   }
+
+  .banner-contain {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .banner-row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .bannerText {
+    margin-top: 2rem;
+  }
+
+  .content-banner {
+    padding-left: 10%;
+    box-sizing: border-box;
+  }
+
+  .banner-head {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 53px;
+    color: #000;
+    font-family: Roboto Condensed, sans-serif !important;
+  }
+
+  .rectbox {
+    border: 3px solid #fd5428;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px 0 40px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
+  .rectbox img {
+    width: 35px;
+    margin-right: 15px;
+    vertical-align: middle;
+    border-style: none;
+  }
+
+  .rectbox h3 {
+    color: #fd5428;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    font-family: Roboto Condensed, sans-serif !important;
+  }
+
+  .quotes {
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+
+  .pm {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+    margin: 0 0 12px;
+  }
+  @media (max-width: 768px) {
+    .banner-head {
+      font-size: 21px !important;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #000;
+      line-height: 35px;
+      margin: 0%;
+      padding: 0%;
+    }
+    .rectbox h3 {
+      font-size: 21px !important;
+      font-weight: 700;
+      line-height: 35px;
+    }
+    .quotes {
+      font-size: 18px !important;
+    }
+    .pm {
+      font-size: 15px !important;
+    }
+  }
+  
+  .btn-book {
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    line-height: 1.5;
+    transition-duration: 0.15s ease-in-out;
+    background-color: 0.15s ease-in-out;
+    border-color: 0.15s ease-in-out;
+    box-shadow: 0.15s ease-in-out;
+  }
+  
+ .baner-img-wrap {
+    text-align: center;
+  }
+
+  .desk-img {
+    display: block;
+    max-height: 490px;
+    max-width: 75%;
+    margin: 0 auto 0 20px;
+    border-style: none;
+  }
+
+  .vaccination-starts {
+    background: linear-gradient(120deg, #007c7c 50%, #04c4c4 0);
+  }
+  
+  .vaccin {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1240px !important;
+  }
+
+  .vaccin-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .total-vacc {
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+ 
+  .vaccin p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .vaccin h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+   .vaccBtn {
+    background: #fcbf02;
+    border-radius: 25px;
+    padding: 0.55rem 2.55rem;
+    color: #4d3b03;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: 2px solid #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-decoration: none;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .vaccBtn {
+      margin-top: 0;
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  .vaccToday {
+    display: flex;
+    align-items: center;
+  }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    .vaccToday {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .pr-2 {
+    padding-right: 0.5rem !important;
+  }
+
+  .pr-2 p {
+    color: #282828;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .pr-2 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+.text-center{
+    color: #045d5d;
+   }
+
+.vaccination-head{
+    color:#329c9c;
+    font-weight: bold;
+}
+    
+.bg-getvaccinated{
+    background-color: rgb(213, 244, 245);
+}
+
+.span h2{
+    font-weight: bold ;
+    color: #045d5d;
+}
+
+.bg-success-card{
+    background-color: rgb(2, 79, 82);
+  }
+
+.card-text-white{
+    color: #fff;
+}
+
+.button-style{
+    background-color: white; 
+    color: #329c9c;
+     border-color: #219494;
+      border-radius:12px;
+}
+
+.col-margin{
+      margin-bottom: 30px;
+}
+
+.nearvaccin{
+      margin-top: 50px;
+      color: #057777;
+      font-weight: bolder;
+}
+
+.loginvaccin{
+     font-weight: bold;
+      color: #04c4c4;
+      text-decoration: none;
+}
+
+.underline {
+    border-bottom: 2px solid #bee0e0; 
+    }
+   
+.text-color1 {
+    color: rgb(43, 145, 131); 
+}
+
+.text-color {
+    color: rgb(75, 76, 72); 
+}
+
+.nav-link {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.nav-link:hover {
+        text-decoration: none; 
+}
+
+.nav-link.active {
+        border-bottom: 3px solid rgb(5, 151, 132); 
+}
+
+.nav-item:hover .nav-link {
+        color: black; 
+}
+
+    .optionselect{
+      margin-bottom: 50px;
+}
+
+.bg-reportsideeffect{
+    background-color: rgb(213, 244, 245);
+}
+
+.bg-correction{
+    background-color: rgb(213, 244, 245);
+}
+
+.bg-vaccinationstatus{
+    background-color: rgb(224, 245, 242);
+}
+
+.bg-raiseissue{
+    background-color:  rgb(2, 79, 82);
+}
+
+.bg-newon{
+    background-color: rgb(234, 243, 242);
+}
+
+   .bg-ourpartner{
+    background-color: rgb(222, 248, 244);
+    }
+
+   .bg-footer{
+    background-color: rgb(18, 116, 119);
+   }
+
+   .bg-subfooter{
+    background-color: rgb(1, 66, 68);
+   }
+
+   .card-img-top{
+    width: 10%;
+    background-color: rgb(0, 15, 0);
+   }
+
+   .text-custom {
+    color: rgb(2, 79, 82);
+        }
+
+    .btn-custom {
+    background-color: rgb(2, 79, 82);
+    border-color: rgb(2, 79, 82);
+        }
+
+    .card-img-top {
+    width: 100%;
+    height: auto;
+    margin: auto; 
+    display: block; 
+    background-color: transparent;
+    }
+
+    .vaccincorrection{
+      color: #017e7e;
+      margin-top: 20px;
+    }
+
+    .vaccincorrectionimg{
+      margin-top: 30px;
+      margin-bottom: 30px;
+     }
+
+    .childvaccin{
+      color: #029494;
+    }
+
+    .childvaccinslot{
+      margin-bottom: 50px;
+      margin-left: 40px;
+    }
+
+    .childvaccinimg{
+      margin-right: 10px;
+      margin-left: 950px;
+    }
+
+    .statusimg{
+     margin-top: 30px;
+    margin-bottom: 30px;
+    }
+
+    .custom-paragraph {
+    font-size: 14px; 
+    line-height: 2; 
+    font-weight: 600;
+    color: #333;
+    }
+
+    .precaution{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(2, 79, 82); 
+    margin-bottom: 30px;
+    }
+
+    .precaution h2,
+    .precaution p,
+    .precaution .btn {
+    margin-right: 10px; 
+    margin-left: 30px;
+    }
+
+    .precaution img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 100px;
+    }
+
+    .precautiondose h2{
+      color: #015757;
+    }
+
+    .slot{
+      margin-bottom: 50px;
+      margin-left: 20px;
+    }
+
+    .h2dose h2 {
+        font-weight: bold;
+    }
+
+    .bg-anissue{
+      background-color: #017e7e;
+    }
+
+    .textp1{
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .textp{
+      font-size: 13px;
+      margin-bottom: 15px;
+      font-weight: 100;
+     color: #fd5428;
+    }
+
+    .reportsideeffect{
+    display: flex;
+    align-items: center;
+    }
+
+    .reportsideeffect .content1 {
+    flex: 1;
+    font-size: x-large;
+    color: rgb(28, 99, 89);
+    }
+
+    .reportsideeffect .content {
+    flex: 1;
+    padding-left: 150px; 
+    }
+
+    .reportsideeffect img {
+    max-width: 100%;
+    height: auto;
+    }
+
+    .reports{
+      margin-top: 40px;
+    }
+
+    .frequent{
+      margin-left: 0;
+    }
+
+    .bg-color{
+      background-color: #219494;
+    }
+
+    .thirdcontainer{
+      margin-right: 550px;
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
+
+    .card-text{
+      color: #438383;
+      font-weight: bold;
+    }
+
+    .vaccine-text{
+      color: #04c4c4;
+    }
+
+    .largestvaccin{
+      padding-left: 100px;
+    }
+
+    .dashboard{
+      margin-left: 600px;
+      margin-top:50px ;
+    }
+
+    .circleclass{
+      margin-bottom: 40px;
+    }
+
+    .partnerstext{
+      color: #017e7e;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .partnersrow{
+      margin-top: 60px;
+      
+    }
+    .viewMore{
+      margin-left: 180px;
+      margin-bottom:50px ;
+      text-decoration: none;
+      background-color: #045d5d;
+    }
+
+    .partneras{
+      margin-bottom:40px ;
+      color: #010f0f;
+      font-weight: bold;
+      }
+
+    .btn-primary {
+    background-color: rgb(8, 121, 121);
+    border-color: rgb(2, 79, 82);
+    }
+
+    .support-btn {
+    background-color: rgb(18, 116, 119);
+    border: none;
+    border-radius: 15px; 
+    padding: 4px 10px; 
+    }
+
+.textlightish{
+  color: #b5d3d3;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+    }
+
+.textzero{
+  font-size: small;
+  line-height: 30px;
+    }
+
+.textzerosub{
+  margin-top: 20px;
+  font-size: small;
+  line-height: 30px;
+}
+
+.textzeroimg{
+  margin-top: 10px;
+}
+
+.foot-img{
+  margin-left: 150px;
+}
+
+
+
+</style>
+<body>
+  
+<!-- first navbar started -->
+
+<div class="cowin">
+<div class="header-main">
+  <div class="container-fluid">
+     <div class="row row-header">
+            <div class="support">
+                <button class="support-btn">
+                    <div class="support-filter">
+                        <span class="support-span">
+                            <img src="https://www.cowin.gov.in/assets/images/Support.svg" class="support-img"/>
+                        </span>
+                        <span class="support-title">
+                            Support For
+        <span class="support-covid">COVID-19</span>
+                        </span>
+                    </div>
+                </button>
+            </div>
+            <div class="col-6 col-sm-6 first-col my-auto text-lg-start">
+                <div class="government-india">
+                    <span>
+                        <a href="">
+                            <img src="https://www.cowin.gov.in/assets/images/emblem-gov.svg" alt="emblem" class="logo"/>
+                        </a>
+                    </span>
+                    <span class="main-title">
+                        <a href="">
+                            Ministry of Health and <br/>Family Welfare
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 my-auto header-right">
+                <ul class="head-ul">
+                    <li class="head-li">
+                        <button class="button-head">A +</button>
+                    </li>
+                    <li class="head-li">
+                        <button class="btn-a button-head">A</button>
+                    </li>
+                    <li class="head-li">
+                        <button class="button-head">A -</button>
+                    </li>
+                </ul>
+                <div class="head-drop">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                         <button class="btn btn-outline text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                English</button>
+                                        
+                                                <div class="dropdown-menu drop-list" aria-labelledby="dropdownMenuButton1">
+                                                <a class="dropdown-item" href="#">English</a>
+                                                <a class="dropdown-item" href="#">हिन्दी(Hindi)</a>
+                                                <a class="dropdown-item" href="#">മലയാളം(Malayalam)</a>
+                                              </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- first navbar ended -->
+
+<!-- second navbar started -->
+
+<div class="mid-row">
+    <div class="container-fluid mid-contain">
+        <div class="row d-block mid-left align-content-center">
+            <div class="col-12 mid-sub">
+                <nav class="navbar d-flex">
+                    <div class="logoArea">
+                        <a href="">
+                            <div class="cowin-logo">
+                                <img src="https://www.cowin.gov.in/assets/images/new-logo.svg" class="cowin-image" alt="cowin"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="login-button">
+                        <a href="">Register / Sign In </a>
+                    </div>
+                    <div class="navleft">
+                        <div class="menuNav">
+                            <ul class="menuItem">
+                                <li>
+                                    <a href="">
+                                        ABHA<span>(Health ID)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">Dashboard </a>
+                                </li>
+                                <li>
+                                    <a href="">Verify Certificate </a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ </a>
+                                </li>
+                                <li>
+                                    <a href="">Partners </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dot-list d-md-block d-lg-none">
+                     
+                        
+                                <div class="dropdown-menu drop-list-second " aria-labelledby="dropdownMenuButton1">
+                                    <a class="dropdown-item" href="#">ABHA(Health ID)</a>
+                                    <a class="dropdown-item" href="#">Dashboard</a>
+                                    <a class="dropdown-item" href="#">Verify cirtificate</a>
+                                    <a class="dropdown-item" href="#">FAQ</a>
+                                    <a class="dropdown-item" href="#">Partners</a>
+                           
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- second nav bar ended -->
+
+<!-- other portion  start -->
+
+
+   <div class="banner1">
+    <div class="container-fluid banner-contain">
+        <div class="row banner-row d-flex">
+            <div class="col-sm-12 col-md-6 col-lg-6 bannerText order-2">
+                <div class="content-banner">
+                    <h3 class="banner-head">
+                        Historic &amp;Unparalleled Achievement ! <br/>India’s Glorious Journey of
+                    </h3>
+                    <div class="rectbox">
+                        <img src="https://www.cowin.gov.in/assets/images/verified.svg"/>
+                        <h3>200 Crore vaccinations</h3>
+                    </div>
+                    <h4 class="quotes">"India is set to defeat Covid-19. Every Indian is making it possible."</h4>
+                    <p class="pm">- PM Narendra Modi</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 order-lg-2">
+                <div class="banner-img-wrap">
+                    <img src="https://www.cowin.gov.in/assets/images/independance.svg" class="desk-img"/>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- second other portion start -->
+
+<div class="vaccination-starts">
+    <div class="container vaccin">
+        <div class="row align-items-center vaccin-row">
+            <div class="col-md-5">
+                <div class="total-vacc pt-3 pt-md-0">
+                    <div class="d-md-none">
+                        <p>TOTAL VACCINATION DOSES</p>
+                        <h3 class="mb-btm">
+                            <span style="pointer-events: none">2,56,69,04,688</span>
+                        </h3>
+                    </div>
+                    <div class="charts">
+                        <div class="chart-size">
+                            <div class="expand">
+                                <div class></div>
+                            </div>
+                            <div class="shrink">
+                                <div class></div>
+                            </div>
+                        </div>
+                        <canvas _ngcontent-rpn-c116="" id="totalVaccStreaming" class="w-75 h-75 chartjs-render-monitor" width="273" height="136" style="display: block; height: 109px; width: 219px"></canvas>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <p>TOTAL VACCINATION DOSES</p>
+                        <h3 class="mb-btm">
+                            <span style="pointer-events: none; color: #fff">2,56,69,04,688</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 text-center pb-3 pt-2">
+                <a href="" class="vaccBtn">View More</a>
+            </div>
+            <div class="col-md-5">
+                <div class="vaccToday justify-content-end">
+                    <div class="pr-2">
+                        <p>VACCINATIONS DONE TODAY</p>
+                        <h3>
+                            <span>456</span>
+                        </h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- second other portion end -->
+
+<!-- third portion strats 3 card -->
+
+<div class="container-fluid bg-getvaccinated ">
+  <div class="span p-5 mb-2 d-flex justify-content-center"><h2>Get Vaccinated in 3 Easy Steps</h2></div>
+<div class="row row-cols-1 row-cols-md-5 gap-5 justify-content-center">
+  <div class="col-margin ">
+<div class="card h-100  ">
+  <button type="button" class="button-style position-absolute start-50 translate-middle" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Step 1">
+Step 1
+</button>
+
+<img src="https://www.cowin.gov.in/assets/images/Step_1.svg" width="80px" height="120px" class="card-img-top" alt="...">
+      <div class="card-body bg-success-card  ">
+       <p class="card-text-white ">Book an Appointment on
+          Co-WIN or Walk into any Vaccination Center.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">How to Book Your
+          <ol>Appointment on Co-WIN?</ol></small>
+      </div>
+    </div>
+  </div>
+  <div class="col-margin">
+    <div class="card h-100 ">
+      <button type="button-style" class="button-style  position-absolute start-50 translate-middle" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Step 2">
+Step 2
+</button>
+
+    <img src="https://www.cowin.gov.in/assets/images/Step_2.svg"  width="80px" height="120px" class="card-img-top" alt="...">
+      <div class="card-body bg-success-card  ">
+       <p class="card-text-white "> Get Your Vaccination Safely at the Time of Your Appointment</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Dos And Dont's For Getting<p>Vaccinated</p></small>
+      </div>
+    </div>
+  </div>
+  <div class="col-margin">
+    <div class="card h-100">
+      <button type="button" class="button-style  position-absolute start-50 translate-middle" 
+      data-bs-toggle="tooltip" data-bs-placement="top" title="Step 3">
+Step 3
+</button>
+      
+<img src="https://www.cowin.gov.in/assets/images/Step_3.svg" width="80px" height="120px" class="card-img-top" alt="...">
+      <div class="card-body bg-success-card  ">
+       <p class="card-text-white">Download Your Vaccination Certificate from Co-WIN and Wait for Dose #2</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary">Download Your Vaccine
+          <p>Certificate</p></small>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- third portion ends  -->
+
+<!--forth portion starts -->
+<div class="container">
+    <h2 class="text-center  nearvaccin">Search Your Nearest Vaccination Center</h2>
+    <p class="text-center text-custom">Get a preview list of the nearest centers and check availability of vaccination slots</p>
+    <div>
+      <a class="text-center d-block  loginvaccin" href="#"  >
+        Login to book your slot
+      </a>
+    </div>
+    
+<div class="mt-4">
+  <div class="nearestVaccination mb-4">
+    <ul class="nav  justify-content-center">
+        <li class="nav-item navunderline me-5 ">
+            <a href="" class="nav-link active text-color1">By District</a>
+        </li>
+        <li class="nav-item me-5 ">
+            <a href="" class="nav-link text-color">By PIN</a>
+        </li>
+        <li class="nav-item ">
+            <a href="" class="nav-link text-color">On the Map</a>
+        </li>
+    </ul>
+    <div class="underline"></div>
+</div>
+
+    
+<div class="container optionselect">
+  <form class="row g-3">
+      <div class="col-md-4">
+          <label for="stateSelect" class="form-label text-custom"></label>
+          <select class="form-select rounded-pill" id="stateSelect">
+              <option selected>Select Your State:</option>
+              <option value="1">Kerala</option>
+              <option value="2">Karnataka</option>
+              <option value="3">Tamil Nadu</option>
+          </select>
+      </div>
+      <div class="col-md-4">
+          <label for="districtSelect" class="form-label text-custom"></label>
+          <select class="form-select rounded-pill" id="districtSelect">
+              <option selected>Select District:</option>
+              <option value="1">Thiruvananthapuram (TVM)</option>
+              <option value="2">Kollam</option>
+              <option value="3">Thrissur</option>
+          </select>
+      </div>
+      <div class="col-md-4 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary btn-custom rounded-pill" style="width: 120px";>Search</button>
+      </div>
+  </form>
+</div>
+</div>
+</div>
+
+<!-- forth portion ends -->
+
+<!-- sixth portion starts -->
+<div class="container-fluid precaution">
+    <div>
+        <div class="h2dose"><h2>Free COVID Precaution Dose</h2></div>
+        <p>Precaution dose for 18-59 age group free at Government</p>
+          <p> Vaccination Center.</p>
+        <a href="#" class="btn btn-primary rounded-pill">Book Your Slot</a>
+    </div>
+    <img src="https://www.cowin.gov.in/assets/images/free_covid_precaution_dose.svg" alt="COVID-19 Vaccine">
+</div>
+<!-- sixth portion ends -->
+
+<!-- sevanth portion starts -->
+<div class="container-fluid reportsideeffect bg-reportsideeffect p-5">
+    <div>
+        <img src="https://www.cowin.gov.in/assets/images/reports-aefi.svg" alt="COVID-19 Vaccine" class="img-fluid">
+    </div>
+    <div class="content">
+        <div class="align-middle fs-1 content1">Report Side Effect</div>
+        <div class="span "> If you have experienced any side effect after COVID-19 vaccination, it can be reported on Co-WIN using your registered mobile number</div>
+        <a href="https://cowin-safevac.nhp.gov.in/home.html#beneficiary" class="btn btn-primary rounded-pill reports ">Report Now</a>
+    </div>
+</div>
+<!-- sevanth portion ends -->
+
+<!-- eighth portion starts  -->
+<div class="container-fluid">
+  <h2 class="mt-4 childvaccin">Children Vaccination </h2>
+<div class="row ">
+    <p>Now available for children of the age group 12+ years in Private Vaccination Centers. The time span between the first and second dose of Covovax is 21 days. Children can be administered with the second dose of Covovax within a month.</p>
+      <p>Children of the age group 12-14 years are now eligible for the Corbevax vaccine in Government Vaccination Centers and in Private Vaccination Centers for 12+ years. The period between the first and second dose of Corbevax is 28 days.</p>
+      </div>
+  <div class="col   childvaccinimg">
+
+   <img src="https://www.cowin.gov.in/assets/images/Children_Vaccination.svg"width="400px" height="240px"  alt="Image 1" class="img-fluid">
+    </div>
+      <p>Available for children of the age group of 15+ years in both Government and Private Vaccination Centers. Children must complete 4 to 6 weeks after administration of the first dose of Covaxin to take the second dose of Covaxin. Both online and walk-in options are available.</p>
+      </div>
+       <a href="booking-link.html" class="btn btn-primary rounded-pill childvaccinslot">Book Your Slot</a>
+     
+
+<!-- eighth portion ends -->
+ 
+<!-- ninth portion starts -->
+<div class="container-fluid bg-correction">
+  <div class="row">
+      <div class="col-lg-6 vaccincorrectionimg">
+          <img src="https://www.cowin.gov.in/assets/images/Date_Correction.svg" alt="Vaccine Image" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+          <h2 class="vaccincorrection">Vaccination Date Correction</h2>
+          <p>If the date printed on your vaccination certificate differs from the actual date of vaccine administration, you may raise a request for correction of the same by submitting a valid proof of the correct vaccination date.</p>
+          <a href="date-correction-request.html" class="btn btn-primary rounded-pill">Update Date</a>
+      </div>
+  </div>
+</div>
+<!-- ninth portion ends -->
+
+<!-- tenth portion starts -->
+<div class="container-fluid precautiondose">
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2 class="mt-4">Precaution Dose</h2>
+            <ul>
+                <li>All fully vaccinated adult citizens (18+ and have taken 2 doses) are eligible for precaution dose from 10/04/2022. Eligible citizens can avail precaution dose at any Government or Private Vaccination Center. Citizens should carry their Final Certificate of vaccination (with details of both earlier doses). Citizens should use the same mobile number and ID card used for earlier doses.</li>
+                <li>HCWs, FLWs, and Citizens aged 60 years or more shall continue to receive precaution dose vaccination at any CVC, including free of charge vaccination at Government Vaccination Centers.</li>
+                <li>For international travel, the precaution dose can be administered to such beneficiaries less than 9 months to a minimum interval of 3 months (90 days) from the date of administration of the second dose as recorded on Co-WIN as per the requirement of the destination country. All Vaccination Centers in the State where precaution dose is being administered are eligible to administer the precaution dose.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.cowin.gov.in/assets/images/Precaution_dose.svg" alt="Image" class="img-fluid mt-4">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <a href="booking-link.html" class="btn btn-primary rounded-pill slot">Book Your Slot</a>
+        </div>
+    </div>
+</div>
+<!-- tenth portion ends -->
+
+<!-- elevanth portion starts -->
+<div class="container-fluid bg-vaccinationstatus">
+  <div class="row">
+    <div class="col-md-5 p-0 statusimg">
+      <img src="https://www.cowin.gov.in/assets/images/share_illustration.svg" width="70%" alt="Vaccination Image" class="img-fluid">
+    </div>
+    <div class="col-md-7 p-0">
+      <div class="container text-center py-5 btnnstatus">
+        <h3>Share Your Vaccination Status</h3>
+        <p class="lead custom-paragraph">Be a Fighter! If you are fully or partially vaccinated, you can now share your vaccination status in your social circle. Let's encourage our friends and followers in joining India's battle against COVID-19.</p>
+        <a href="share-status-link.html" class="btn btn-primary btn-lg rounded-pill btnstatus">Share Your Status</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- elevanth portion ends -->
+
+<!-- twelth portion starts -->
+<div class="container-fluid  raiseissue">
+<div class="container text-center my-5">
+    <h1>ABHA (Health ID) and its Benefits</h1>
+    <p class="lead">ABHA (earlier known as Health ID) is an acronym for Ayushman Bharat Health Account. Using ABHA (Health ID) is the first step towards creating safer and efficient digital health records for you and your family. It enables your interaction with participating healthcare providers, and allows you to receive your digital lab reports, prescriptions and diagnosis seamlessly from verified healthcare professionals and health service providers.</p>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://www.cowin.gov.in/assets/images/abha-preview.jpg" width="500" alt="ABHA Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="https://www.cowin.gov.in/assets/images/abha-previewimg.jpg" width="500" alt="ABHA Image 2" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<div class="container text-center my-5">
+    <a href="#" class="btn btn-primary btn-lg">Click Here to Know More</a>
+</div>
+</div>
+
+<!-- twelth portion ends -->
+
+<!-- thirteenth portion starts -->
+<div class="container-fluid bg-anissue">
+  <div class="container py-5" style="max-width: 1200px;">
+    <h1 class="text-center text-white">Raise An Issue</h1>
+    <p class="lead text-center text-white">Raise an issue or get solutions to your Co-WIN account and vaccination certificate related issues instantly.</p>
+
+    <div class="container my-4">
+        <div class="row gx-md-4">
+            <div class="col-md-3 mb-4 d-flex">
+                <div class="card">
+                    <h6 class="card-title text-center textp1">Merge Certificates</h6>
+                    <p class="card-text textp" style="color: rgb(102, 93, 93);">In case you have multiple certificates of Dose 1 generated from different accounts, you can merge them into the final vaccination certificate.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                  <h6 class="card-title text-center textp1">Add Passport</h6>
+                    <p class="card-text textp" style="color: rgb(102, 93, 93);">You can link your passport to your vaccination certificate. By adding a passport to your vaccination certificate, you can submit a request and get an international travel certificate.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 d-flex">
+                <div class="card">
+                  <h6 class="card-title text-center textp1">Report Unknown Member</h6>
+                    <p class="card-text textp" style="color:  rgb(102, 93, 93);">If there are any unknown members associated with your account, you can remove them from your account by reporting unknown members.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 d-flex">
+                <div class="card ">
+                  <h6 class="card-title text-center textp1">Transfer Member To New Number</h6>
+                    <p class="card-text textp" style="color:  rgb(102, 93, 93);">You can transfer members associated with your existing account to the new mobile number.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- thirteenth portion ends -->
+
+<!-- fourteenth portion starts -->
+<div class="container my-5">
+  <h1 class="text-center">Frequently Asked Questions</h1>
+</div>
+
+
+<div class="container frequent">
+  <div class="row justify-content-end">
+      <div class="col-auto bg-reportsideeffect ">
+          <nav aria-label="Page navigation">
+              <ul class="pagination m-2">
+                  <li class="page-item text-color">
+                      <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                      </a>
+                  </li>
+                  <li class="page-item"><a class="page-link text-black" href="#">All Registration</a></li>
+                  <li class="page-item"><a class="page-link text-black" href="#">Vaccination Schedules</a></li>
+                  <li class="page-item"><a class="page-link text-black" href="#"> Schedules</a></li>
+                  <li class="page-item"><a class="page-link text-black" href="#">Scheduling Appointment</a></li>
+                  
+                  <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3 ">
+          <div class="card bg-white text-green text-center rounded-pill border border-success">
+            
+              <div class="card-body download  ">
+                  <h5 class="card-title ">Download</h5>
+                  </div>
+            </div>
+          <img src="https://www.cowin.gov.in/assets/images/faq_Section.svg" class="card-img-bottom" alt="Image" height="350px" width="1050px">
+      </div>
+      <div class="col-md-8">
+        
+          <div class="container rounded p-3 bg-light" style="max-height: 200px; overflow-x: auto;">
+              <ul>
+                  <li>1. Where can I register for COVID-19 vaccination?</li>
+                  <li>2. Is there a mobile app that needs to be installed to register for vaccination?</li>
+                  <li>3. Which age groups can register for vaccination on the Co-WIN portal?</li>
+                  <li>4. Is online registration mandatory for COVID-19 vaccination?</li>
+                  <li>5. How many people can be registered in the Co-WIN portal through one mobile number?</li>
+                  <li>6. How can beneficiaries with no access to smartphones, computers, or the internet manage online registration?</li>
+                  <li>7. Raising Issues</li>
+                  <li>8.How do I book a slot online?</li>
+
+
+              </ul>
+          </div>
+      </div>
+  </div>
+ </div>
+<!-- fourteenth portion ends -->
+
+<!-- fifteenth portion starts -->
+<div class="container-bg  bg-newon ">
+  <h1 class="text-center">What's New on Co-WIN?</h1>
+
+  <div class="col">
+    <img src="https://www.cowin.gov.in/assets/images/what's_new_on_cowin.svg" width="200px" height="150px"  class="img-fluid float-end" alt="Your Image">
+</div>
+
+<div class="container rounded p-3 bg-light thirdcontainer" style="max-height: 300px; overflow-x: auto; ">
+<div class="row">
+      <div class="col-md-6">
+          <div class="card ">
+              <img src="img01.jpg "   class="card-img-top text-white  " alt=" 01">
+              <div class="card-body">
+                  <p class="card-text">New feature to report side effects after COVID-19 vaccination.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card">
+              <img src="img02.jpg" class="card-img-top text-white" alt=" 02">
+              <div class="card-body">
+                  <p class="card-text">Early administration of a precaution dose of COVID-19 vaccine prior to the prescribed time interval to the persons intending to undertake international travel.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row my-3">
+      <div class="col-md-6">
+          <div class="card">
+              <img src="img03.jpg" class="card-img-top text-white" alt=" 03">
+              <div class="card-body">
+                  <p class="card-text">Covovax vaccine for children.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card">
+              <img src="img04.jpg" class="card-img-top text-white" alt=" 04">
+              <div class="card-body">
+                  <p class="card-text">Precaution dose is now available for 18+ age group at both Government and Private Vaccination Centers.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row my-3">
+      <div class="col-md-6">
+          <div class="card">
+              <img src="img05.jpg" class="card-img-top text-white" alt=" 05">
+              <div class="card-body">
+                  <p class="card-text">The new feature “Vaccination Date Correction” is added to Co-WIN.</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="card">
+              <img src="img06.jpg" class="card-img-top text-white" alt=" 06">
+              <div class="card-body">
+                  <p class="card-text">Introducing new vaccine Corbevax for children.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+<div class="row my-3">
+    <div class="col-md-6">
+        <div class="card">
+            <img src="img05.jpg" class="card-img-top text-white" alt=" 07">
+            <div class="card-body">
+                <p class="card-text">The new feature “Vaccination Date Correction” is added to Co-WIN.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <img src="img06.jpg" class="card-img-top text-white" alt=" 08">
+            <div class="card-body">
+                <p class="card-text">Introducing new vaccine Corbevax for children.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row my-3">
+  <div class="col-md-6">
+      <div class="card">
+          <img src="img05.jpg" class="card-img-top text-white" alt=" 09">
+          <div class="card-body">
+              <p class="card-text">The new feature “Vaccination Date Correction” is added to Co-WIN.</p>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-6">
+      <div class="card">
+          <img src="img06.jpg" class="card-img-top text-white" alt=" 10">
+          <div class="card-body">
+              <p class="card-text">Introducing new vaccine Corbevax for children.</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- fifteenth portin ends-->
+
+<!-- sixteenth portion starts-->
+   <div class="row what-row">
+<div class="container text-success text-center  ">
+    <div class=vaccination-head ><h2 >India Is Running The World’s Largest Vaccination Drive</h2>
+   <div class="row what-row">
+           <div class="col-md-4 col-sm-12 col-lg-3 col-xl-3 largestvaccin">
+  <div class="vaccin-details mb-4">
+      <div class="vaccine-text">
+          <p>Vaccines Delivered</p>
+          <div class="bg-color text-white py-lg-0 rounded">
+              <h2>
+                  <span style="pointer-events: none; font-size: 25px; font-weight: 600;">2,20,68,63,952</span>
+                  <span class="pl-1" style="font-size: 13px;font-weight: 400;">+ 6,386</span>
+              </h2>
+          </div>
+      </div>
+  </div>
+  <div class="vaccin-details mb-4">
+      <div class="vaccine-text">
+          <p>Citizens Fully Vaccinated</p>
+          <div class="bg-color text-white py-lg-0 rounded">
+              <h2>
+                  <span style="pointer-events: none; font-size: 25px; font-weight: 600;">95.2 Crore</span>
+                  <span class="pl-1" style="font-size: 13px;font-weight: 400;">+ 51</span>
+              </h2>
+          </div>
+      </div>
+  </div>
+  <div class="vaccin-details mb-4">
+      <div class="vaccine-text">
+          <p>% of Fully Vaccinated</p>
+          <div class="bg-color text-white py-lg-0 rounded">
+              <h2>
+                  <span style="pointer-events: none; font-size: 25px; font-weight: 600;">92.66%</span>
+                  <span class="pl-1" style="font-size: 13px;font-weight: 400;"></span>
+              </h2>
+          </div>
+      </div>
+  </div>
+</div>
+
+          <div class="col-auto ">
+              <div class="bg-white rounded-pill p-2 border border-success dashboard ">
+                  <h5 class="text-success-dashboard m-0 ">View Vaccination Dashboard</h5>
+              </div>
+          </div>
+
+<div class="circleclass">
+
+            <svg id="my_dataviz1" width="100%" height="380" viewBox="10 0 450 550" preserveAspectRatio="xMidYMid meet">
+                       <g class="legend" transform="translate(1,545)">
+                                <g>
+                                    <circle cx="40" cy="-15" r="15" stroke="#04C4C4" stroke-width="3" style="fill: none;"></circle>
+                                    <text y="-30" dy="1.5em" dx="3.3em" style="font: 12px sans-serif; text-anchor: middle; fill: rgb(4, 196, 196);">1M</text>
+                                </g>
+                                <g>
+                                    <circle cx="40" cy="-25.980762113533157" r="25.980762113533157" stroke="#04C4C4" stroke-width="3" style="fill: none;"></circle>
+                                    <text y="-51.96152422706631" dy="1.5em" dx="3.3em" style="font: 12px sans-serif; text-anchor: middle; fill: rgb(4, 196, 196);">3M</text>
+                                </g>
+                                <g>
+                                    <circle cx="40" cy="-36.74234614174767" r="36.74234614174767" stroke="#04C4C4" stroke-width="3" style="fill: none;"></circle>
+                                    <text y="-73.48469228349533" dy="1.5em" dx="3.3em" style="font: 12px sans-serif; text-anchor: middle; fill: rgb(4, 196, 196);">6M</text>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+<!-- sixteenth portion ends -->
+
+<!-- seventh portion starts -->
+<div class="our-partner bg-ourpartner text-success py-5">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-md-10 text-center mb-3">
+              <h2 class="mb-0 partnerstext">Our Partners</h2>
+          </div>
+      </div>
+      <div class="row partnersrow">
+          <div class="col-md-3 d-none d-md-block">
+              <img src="https://www.cowin.gov.in/assets/images/partners_page.svg" class="partner-image img-fluid">
+          </div>
+          <div class="col-md-9">
+              <div class="row">
+                  <div class="col-6 col-sm-3">
+                      <div class="partners-card bg-white p-2 rounded shadow">
+                          <img src="https://www.cowin.gov.in/assets/images/digilocker_new_Logo.svg" class="partners-image img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                      <div class="partners-card bg-white p-2 rounded shadow">
+                          <img src="https://www.cowin.gov.in/assets/images/umang_new_logo.svg" class="partners-image img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                      <div class="partners-card bg-white p-3 rounded shadow">
+                          <img src="https://www.cowin.gov.in/assets/images/arogya_setu_logo1.svg" class="partners-image img-fluid">
+                      </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                      <div class="partners-card bg-white p-2 rounded shadow">
+                          <img src="https://www.cowin.gov.in/assets/images/my_gov_new_logo.svg" class="partner-image img-fluid">
+                      </div>
+                  </div>
+              </div>
+              </div>
+              <div class="row justify-content-center mb-2">
+              <div class="col-md-6 text-center">
+                  <div class="d-flex align-items-center justify-content-between">
+                      <a href="https://www.cowin.gov.in/our-partner" class="viewMore  rounded-pill text-white px-4 py-2 mr-2 ">View More</a>
+                      <div class=" bg-white p-2 ml-2 rounded-pill border border-success partneras">
+                          <p class="text-success m-0 ">Register As Partner</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+<!-- seventh portion ends -->
+
+
+<div class="footer">
+  <div class="container-fluid bg-footer">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="row ">
+                  <div class="col-md-3 mb-2 text-light-emphasis">
+                      <h5 class="textlightish">Vaccination Services</h5>
+                      <ul class=" list-unstyled footer-links textzero">
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Register Members</a>
+                          </li>
+                          <li>
+                              <a href="" class="text-decoration-none text-white ">Search Vaccination Centers</a>
+                          </li>
+                          <li>
+                              <a href="" class="text-decoration-none text-white">Book Vaccination Slots</a>
+                          </li>
+                          <li>
+                              <a href="" class="text-decoration-none text-white">Manage Appointment</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Download Certificate</a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="col-6 col-md-4 text-light-emphasis">
+                      <h5 class="textlightish">Platforms</h5>
+                      <ul class=" list-unstyled footer-links  textzero">
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Co-WIN International</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Vaccinator</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Department Login</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Verify Certificates</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Vaccination Statistics</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-6 col-md-4 text-light-emphasis">
+                      <h5 class="textlightish">Resourses</h5>
+                      <ul class=" list-unstyled footer-links textzero ">
+                          <li>
+                              <a href=""class="text-decoration-none text-white">How To Get Vaccinated</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Dos and Don'ts</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Overview  </a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">API Guidelines </a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Open API's </a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Grievance Guidelines </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 contactusCol">
+              <div class="row mb-2">
+                  <div class="d-none d-md-block col-md-4 col-lg-6 text-light-emphasis ">
+                      <h5 class="textlightish">SUPPORT</h5>
+                      <ul class=" list-unstyled footer-links textzero ">
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Frequently Asked Questions</a>
+                          </li>
+                          <li>
+                              <a href=""class="text-decoration-none text-white">Certificate Corrections</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-8 col-lg-6  ">
+                      <h5 class="textlightish">CONTACT US</h5>
+                      <div class="row">
+                          <div class="col-12 helpline">
+                              <p class=" helplineNumber text-white" >
+                                  Helpline: 
+                                  <span>
+                                      +<a href="tel:911123978046"class="text-decoration-none text-white">91-11-23978046</a>
+                                      (Toll Free - <a href="tel:1075" aria-label="1075" class="text-decoration-none text-white">1075</a>
+                                     
+                                      ) 
+                                  </span>
+                              </p>
+                              <p class=" technicalNumber text-white" class="text-decoration-none text-white">
+                                  Technical Helpline: 
+                      
+                                  <span>
+                                      <a href="tel:0120-4783222" class="text-decoration-none text-white">0120-4783222</a>
+                                  </span>
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+             </div>
+      </div>
+  </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="container-fluid bg-subfooter">
+        <div class="row bottomFooter">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <p class="text-center text-white text-md-left  textzerosub">Copyright © 2021 Co-WIN. All Rights Reserved</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <ul class="list-unstyled d-flex justify-content-center justify-content-md-center justify-content-lg-start">
+                    <li class="mr-3">
+                        <a href="">
+                            <img class="foot-img textzeroimg" src="https://www.cowin.gov.in/assets/images/national-health-authority.jpg" width="80px" height="50px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="  textzeroimg" src="https://www.cowin.gov.in/assets/images/undp-logo-vertical.svg" width="100px" height="50px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 bottomFooterCol">
+                <div class="row">
+                    <div class="col-6 col-md-6 col-lg-6 col-xl-4 bottomFooterLinks1 bottomFooterLinks2">
+                        <a href="" class="text-decoration-none text-md-right d-block text-white  textzerosub">Terms of Service</a>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-6 col-xl-4 bottomFooterLinks2">
+                        <a href="" class=" text-decoration-none text-center text-md-left d-block text-white textzerosub">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+</body>
+</html>
